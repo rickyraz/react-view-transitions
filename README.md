@@ -2,27 +2,35 @@
 
 A reusable AI skill for implementing, debugging, and explaining React View Transitions, including React release-channel constraints (Stable vs Canary/Experimental).
 
+## Repository Layout
+
+This repository uses a cross-tool multi-skill layout:
+
+```text
+skills/react-view-transitions/SKILL.md
+skills/react-view-transitions/agents/openai.yaml
+skills/react-view-transitions/references/react-view-transitions-architecture.md
+```
+
 ## Install Skill
 
 Option 1: via `skills` CLI
 
 ```bash
-npx skills add https://github.com/rickyraz/react-view-transitions
+npx skills add https://github.com/rickyraz/react-view-transitions --skill react-view-transitions
 ```
 
-Option 2: clone manually into your tool's local skills directory
+Option 2: install from direct skill path in the repo
 
 ```bash
-mkdir -p ~/.skills
-git clone git@github.com:rickyraz/react-view-transitions.git ~/.skills/react-view-transitions
+npx skills add https://github.com/rickyraz/react-view-transitions/tree/main/skills/react-view-transitions
 ```
 
-If you are using Codex specifically, common equivalents are:
+Option 3: clone repo, then copy only the skill folder into your tool's skill directory
 
 ```bash
-npx skills add https://github.com/rickyraz/react-view-transitions --agent codex
-mkdir -p ~/.codex/skills
-git clone git@github.com:rickyraz/react-view-transitions.git ~/.codex/skills/react-view-transitions
+git clone git@github.com:rickyraz/react-view-transitions.git /tmp/react-view-transitions
+cp -R /tmp/react-view-transitions/skills/react-view-transitions ~/.skills/react-view-transitions
 ```
 
 ## Verify Installation
@@ -33,7 +41,13 @@ In a new AI assistant session, try:
 Use $react-view-transitions to debug why my list reorder animation becomes a cross-fade.
 ```
 
-If the skill is detected, the assistant will use `SKILL.md` and the internal reference in `references/react-view-transitions-architecture.md`.
+If the skill is detected, the assistant will use `skills/react-view-transitions/SKILL.md` and `skills/react-view-transitions/references/react-view-transitions-architecture.md`.
+
+Common local skill directories by tool:
+
+- Claude Code: `~/.claude/skills/`
+- Codex: `~/.codex/skills/`
+- Generic local setup: `~/.skills/`
 
 ## React Canary Notes (April 2026)
 
