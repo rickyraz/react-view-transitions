@@ -1,0 +1,6 @@
+interface:
+  display_name: "React View Transitions"
+  short_description: "React View Transitions debugging"
+  default_prompt: "Use $react-view-transitions to debug this React View Transition issue."
+policy:
+  allow_implicit_invocation: true
