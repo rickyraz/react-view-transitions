@@ -1,0 +1,4 @@
+interface:
+  display_name: "Testing Mock Discipline"
+  short_description: "DI-first testing with mock discipline"
+  default_prompt: "Use $testing-mock-discipline to analyze over-mocking in test suites, refactor seams toward dependency injection, and recommend a balanced unit/integration/e2e strategy that increases runtime confidence."
