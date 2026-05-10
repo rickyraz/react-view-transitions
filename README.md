@@ -17,3 +17,11 @@ npx skills@latest add rickyraz/skills --skill react-view-transitions
 ```bash
 npx skills@latest add rickyraz/skills --skill testing-mock-discipline
 ```
+
+## Product & architecture
+
+`orthogonal-blueprint` — Stress-test product ideas and draft blueprints using orthogonal thinking (boring-first gate, six axes, orthogonality, reversibility, pre-mortem, falsification).
+
+```bash
+npx skills@latest add rickyraz/skills --skill orthogonal-blueprint
+```
