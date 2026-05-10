@@ -1,39 +1,39 @@
 # orthogonal-blueprint
 
-Skill untuk **orthogonal thinking** pada blueprint produk: stress-test ide, arsitektur sistem, dan keluar dari tunnel vision lewat boring-first gate, enam sumbu perspektif, tes orthogonality modul, peta reversibilitas, pre-mortem, dan kriteria falsifikasi.
+An agent skill for **orthogonal thinking** in product blueprints: stress-testing ideas and system architecture, escaping tunnel vision via a boring-first gate, six perspective axes, module orthogonality checks, reversibility maps, pre-mortems, and falsification criteria.
 
-## Isi folder
+## Repository layout
 
 ```text
-SKILL.md          # Instruksi utama untuk agen
-reference.md      # Lens per domain & anti-patterns (referensi)
+SKILL.md          # Primary instructions for the agent
+reference.md      # Domain lenses and anti-patterns (reference)
 ```
 
-Tidak ada skrip wajib; agen membaca `SKILL.md` dan mengikut taut ke `reference.md` bila perlu konteks domain.
+There are no required scripts; the agent reads `SKILL.md` and follows links to `reference.md` when domain context is needed.
 
-## Pasang skill
+## Install skill
 
-Lewat CLI `skills` dengan nama skill:
+Using the `skills` CLI with the skill name:
 
 ```bash
 npx skills@latest add rickyraz/skills --skill orthogonal-blueprint
 ```
 
-Atau salin folder ini ke direktori skill editor Anda, misalnya `~/.cursor/skills/orthogonal-blueprint/` atau `.cursor/skills/orthogonal-blueprint/` di repo proyek.
+Alternatively, copy this folder into your editor’s skills directory, for example `~/.cursor/skills/orthogonal-blueprint/` or `.cursor/skills/orthogonal-blueprint/` in a project repo.
 
-## Apa yang dicakup skill ini
+## What this skill covers
 
-- Phase 0: **boring solution gate** sebelum menggeser perspektif
-- Phase 1: permasalahan permukaan vs kebutuhan mendasar
-- Phase 2: **enam sumbu** (inversion, abstraksi, constraint, temporal, adversarial, cross-domain)
-- Phase 3 & 3.5: orthogonality modul dan klasifikasi reversibilitas (Type 1 / Type 2)
-- Phase 4 & 4.5: audit myopia, pre-mortem, dan **falsification gate**
-- Template output blueprint terstruktur dan checklist sign-off
+- Phase 0: **boring solution gate** before shifting perspective
+- Phase 1: surface problem vs underlying need
+- Phase 2: **six axes** (inversion, abstraction, constraint, temporal, adversarial, cross-domain)
+- Phase 3 & 3.5: module orthogonality and reversibility classification (Type 1 / Type 2)
+- Phase 4 & 4.5: myopia audit, pre-mortem, and **falsification gate**
+- Structured blueprint output template and sign-off checklist
 
-## Referensi tambahan
+## Additional reference
 
-- Detail lens (fintech, infra, hardware, web/mobile) dan daftar frasa yang harus ditantang: [`reference.md`](reference.md)
+- Domain lenses (fintech, infra, hardware, web/mobile) and phrases to challenge: [`reference.md`](reference.md)
 
-## Titik masuk
+## Entry point
 
-Mulai dari [`SKILL.md`](SKILL.md) (frontmatter `name: orthogonal-blueprint` untuk discovery).
+Start from [`SKILL.md`](SKILL.md) (frontmatter `name: orthogonal-blueprint` for discovery).
